@@ -27,6 +27,18 @@ How to use it:
 
 For the Mac payload just change the reverse shell listener to your listener IP address, change the port (currently 4444) to your listener port. E.g. nc -lvp 1234 (or use the generic/shell_reverse_tcp in Metasploit). For the Windows payload change to the powershell command of your choice.
 
+I have found that an effective way of packaging the Macro is in a word document named Vacation Photos. 
+This could be Vacation_Photos_CEO-Name-Here.doc or really anything. 
+The idea is to make the name of the file interesting enough that someone would want to open it bad. 
+Bad enough to go against thier better judgement and allow macros just to load the photos. 
+Unfortunately for the user that opens the document there is a present inside but it does not include any vacation photos :)
+
+The text in the document can simply be something like this:
+
+Windows Users - Photos cannot be viewed unless editing is enabled and content is enabled. Please make sure to select the ”Enable Editing” and “Enable Content” buttons above to view this document.
+
+Mac Users – Please reopen this document and select “Enable Macros” to view photos.
+
 Future Plans
 
 Create a script (SET like) to automate creation of Macro using selection of payloads, automate starting listener.
